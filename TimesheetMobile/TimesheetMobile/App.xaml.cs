@@ -9,9 +9,8 @@ namespace TimesheetMobile
     {
         public App()
         {
-            InitializeComponent();
-
-            MainPage = new MainPage();
+            // Application root page
+            MainPage = new NavigationPage(new EmployeePage());
         }
 
         protected override void OnStart()
